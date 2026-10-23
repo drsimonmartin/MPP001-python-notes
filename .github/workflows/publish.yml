@@ -34,17 +34,22 @@ jobs:
 
       - name: Install Atkinson Hyperlegible Font
         run: |
-          # Download font zip from Google Fonts, extract, and move to system font directory
-          wget -q https://github.com/google/fonts/raw/main/ofl/atkinsonhyperlegible/AtkinsonHyperlegible-Regular.ttf
-          wget -q https://github.com/google/fonts/raw/main/ofl/atkinsonhyperlegible/AtkinsonHyperlegible-Bold.ttf
-          wget -q https://github.com/google/fonts/raw/main/ofl/atkinsonhyperlegible/AtkinsonHyperlegible-Italic.ttf
-          wget -q https://github.com/google/fonts/raw/main/ofl/atkinsonhyperlegible/AtkinsonHyperlegible-BoldItalic.ttf
-          mkdir -p ~/.local/share/fonts
-          mv AtkinsonHyperlegible-*.ttf ~/.local/share/fonts/
+          # Create local font directory
+          mkdir -p ~/.local/share/fonts/truetype/atkinson
+
+          # Download fonts from Google Fonts directly into the directory
+          wget -q -O ~/.local/share/fonts/truetype/atkinson/AtkinsonHyperlegible-Regular.ttf https://github.com/google/fonts/raw/main/ofl/atkinsonhyperlegible/AtkinsonHyperlegible-Regular.ttf
+          wget -q -O ~/.local/share/fonts/truetype/atkinson/AtkinsonHyperlegible-Bold.ttf https://github.com/google/fonts/raw/main/ofl/atkinsonhyperlegible/AtkinsonHyperlegible-Bold.ttf
+          wget -q -O ~/.local/share/fonts/truetype/atkinson/AtkinsonHyperlegible-Italic.ttf https://github.com/google/fonts/raw/main/ofl/atkinsonhyperlegible/AtkinsonHyperlegible-Italic.ttf
+          wget -q -O ~/.local/share/fonts/truetype/atkinson/AtkinsonHyperlegible-BoldItalic.ttf https://github.com/google/fonts/raw/main/ofl/atkinsonhyperlegible/AtkinsonHyperlegible-BoldItalic.ttf
+
+          # Refresh system font cache
           fc-cache -f -v
+
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OSFONTDIR: ${{ github.workspace }}/home/runner/.local/share/fonts//
