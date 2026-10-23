@@ -54,7 +54,7 @@
     "href": "WelcomeToPythonJourney.html#text-blocks-in-notebooks",
     "title": "3  Welcome to your Python journey",
     "section": "3.2 Text blocks in notebooks",
-    "text": "3.2 Text blocks in notebooks\nYou can also have blocks of text in notebooks. These allow various formatting options:\n\nBold\nItallic\nhighlighted\n\nAnd maths is quite easy for example $ E = mc^2$ generates: $ E = mc^2$ - this is ‘in-line’ maths. Pairs of dollar symbols will generate centred maths on its own line e.g. $$ E = mc^2$$ gives \\[ E = mc^2\\]\nFor text blocks Jupyter Notebooks use a formatting system called Markdown – it can do a lot more than shown above. Have a look here for more details: https://www.markdownguide.org/basic-syntax/ (or here Jupyter markdown docs)",
+    "text": "3.2 Text blocks in notebooks\nYou can also have blocks of text in notebooks. These allow various formatting options:\n\nBold\nItallic\nhighlighted\n\nAnd maths is quite easy – if you are used to LaTeX then it will already be familiar to you, for example $ E = mc^2$ generates: \\(E = mc^2\\) - an example of ‘in-line’ maths. Pairs of dollar symbols will generate centred maths on its own line e.g. $$ E = mc^2$$ gives \\[ E = mc^2\\]\nFor text blocks Jupyter Notebooks use a formatting system called Markdown – it can do a lot more than shown above. Have a look here for more details: https://www.markdownguide.org/basic-syntax/ (or here Jupyter markdown docs)",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Welcome to your Python journey</span>"
     ]
