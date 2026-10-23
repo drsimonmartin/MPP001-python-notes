@@ -27,6 +27,11 @@ jobs:
           # If you create a requirements.txt file later, you can replace the line above with:
           # pip install -r requirements.txt
 
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
+
       - name: Install Atkinson Hyperlegible Font
         run: |
           # Download font zip from Google Fonts, extract, and move to system font directory
@@ -37,12 +42,6 @@ jobs:
           mkdir -p ~/.local/share/fonts
           mv AtkinsonHyperlegible-*.ttf ~/.local/share/fonts/
           fc-cache -f -v
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          tinytex: true
-
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
