@@ -1,0 +1,36 @@
+on:
+  push:
+    branches: main
+
+name: Render and Publish Quarto Book
+
+permissions:
+  contents: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Install Python Dependencies (if needed)
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      # Uncomment below if you have a requirements.txt file for your notebooks
+      # - name: Install requirements
+      #   run: |
+      #     if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
