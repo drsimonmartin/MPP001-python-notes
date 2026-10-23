@@ -1,0 +1,432 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MPP001 Computer Labs",
+    "section": "",
+    "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Preface</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "2.1 Python on you own computer\nThese notes are written from th epoint of view of working with a PC in one of LU’s computer labs. We’ll be using the Jupyter Lab environment (app). You can install essentially the same software on your own computer for free – see below.\nYou can install Python on your own computer. The computers in the teaching labs use the Anaconda distribution https://www.anaconda.com. It contains a lot of useful python packages and a lot more. It is free for educations use and installers are available for Windows, MacOS, and Linux. If disk space is a premium for you then search on the Anaconda site for the ‘miniconda’ version which contains the basics and there is an easy way to add any extras that you need.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "GettingStarted.html",
+    "href": "GettingStarted.html",
+    "title": "4  Introduction",
+    "section": "",
+    "text": "4.1 Starting a python session on Lab PCs.\nThis part of the guide provides a quick overview of how to get Python running on one of the University PCs and a very short introduction to running python code.\nOnce you are logged in to a lab PC you can start a python session by using the Start Menu – Click on the Anaconda Folder and select the Spyder app.\nThere is also a Python section in the Start Menu. This gives access to other versions, but it is much better to use the method above as it works reliably and you will get the same apps etc. on your own computer if you install Anaconda (see below).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "GettingStarted.html#starting-a-python-session-on-lab-pcs.",
+    "href": "GettingStarted.html#starting-a-python-session-on-lab-pcs.",
+    "title": "4  Introduction",
+    "section": "",
+    "text": "CautionMake sure you have the right Python version\n\n\n\n\n\nYou might be inclined to use the search box to find/start python items. The problem is that this shows up items relating to another version of python (used by SPSS) that is not set up for general use. Worse, it uses an out of date version of python that is not compatible with much of the code used in this module.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "GettingStarted.html#python-on-you-own-computer",
+    "href": "GettingStarted.html#python-on-you-own-computer",
+    "title": "4  Introduction",
+    "section": "4.2 Python on you own computer",
+    "text": "4.2 Python on you own computer\nYou can install Python on your own computer. The computers in the teaching labs use the Anaconda distribution https://www.anaconda.com. It contains a lot of useful python packages and a lot more. It is free for educations use and installers are available for Windows, MacOS, and Linux. If disk space is a premium for you then search on the Anaconda site for the ‘miniconda’ version which contains the basics and there is an easy way to add any extras that you need.\n\n4.2.1 Python for research\nThe Anaconda Python distribution has a mixed history for non-educational use. For research I use the conga-forge distribution instead, this provides a very similar experience to the Anaconda distribution.\nOther versions of python are available. If you do not use Anaconda/conda-forge then do make sure you are installing a one of the Python 3 variations (I advise using version 3.10 or higher). Python 2 is still available, but has some significant differences and you may run into problems using it these days.\nMacOS (and many Linux versions) come with a version of Python however these versions often lack the science libraries needed for this module and it is generally easier to install Anaconda/conda-forge.\nAnaconda also comes with a range of tools for editing and running python code. Spyder is probably the best (free) choice for editing science/engineering code. You can install it separately or as part of the Anaconda installation. Another excellent choice is pyCharm.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "GettingStarted.html#notebook-based-python",
+    "href": "GettingStarted.html#notebook-based-python",
+    "title": "4  Introduction",
+    "section": "5.1 Notebook-based python",
+    "text": "5.1 Notebook-based python\nIf you didn’t fancy the guide given in the link on the Welcome page then have a quick look here: Jupyter notebooks\n\n5.1.1 Exercise:\nModify the example in the link above so that it gives the “Hello World!” greeting.\n\n\n5.1.2 Quick way to run cells\nClicking the Run cell button is fine, but you can save time by pressing the Shift key at the same time as pressing the Return key. This will run whichever cell the cursor is in.\nThis means that you can go back to a cell, edit it, and re-run just that cell. If you use a ‘.py’ file approach then all the code has to be re-run when you make a modification.\n\n\n5.1.3 File extensions\nSo far, we have typed in code to a python session and observed the results. For anything involving more than two or three lines of code we need a way to save/recall code. Jupyter files have the extension .ipynb",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "GettingStarted.html#simple-maths-in-python",
+    "href": "GettingStarted.html#simple-maths-in-python",
+    "title": "4  Introduction",
+    "section": "5.2 Simple maths in python",
+    "text": "5.2 Simple maths in python\nPython has a range of standard mathematical functions as sumarised in the table below. If you have used something like Excel for maths then you should be familiar with them. Try to predict the outcomes of the examples given before entering them into your python system. Do they give the results you expected?\n\n\n\nSymbol\noperation\nexample\n\n\n\n\n+\naddition\n3+2\n\n\n-\nsubstraction\n2-3\n\n\n*\nmultiplication\n3*2\n\n\n/\ndivision\n2/3\n\n\n**\nexponent\n3**2\n\n\n\nThere are a range of other maths operators as well, but this is enough for now.\n\n5.2.1 Beyond simple maths\nGiven the similarity to Excel for the operators above, what do you think the following will produce?\ncos(0.0)\nTry it in the Spyder console.\nYou probably got something like:\nTraceback (most recent call last):\n  File \"&lt;pyshell#6&gt;\", line 1, in &lt;module&gt;\n    cos(0)\nNameError: name 'cos' is not defined\nWhich is a longwinded way of the python system telling you it has no function cos(). One of the key features of python is that it is easily extendable. Try the following code snippet:\nimport numpy as np\nnp.cos(0.0)\nThe first line in the block above tells python to use the module called numpy (often pronounced num–pie) and all references to its contents will be preceded by np. for example np.sin(3.141). Numpy is an extensive maths library that is very well optimised and we will use it a lot in MPP001–along with a lot of other libraries.\n\n\n5.2.2 as library_name\nThe as np can be neglected and then to access numpy’s functions numpy. will need to be added instead of ‘np’. However it is very common to use as library_name because the full library name can be quite long and this can make the card hard to read (and longer to type). Formally the as sets up an alias to the original name of the library so you.\nnp is used by convention for the numpy library, you can use any text identifier you like, but remember that you and others need to be able to follow the code so keep it simple. For instance you could use include numpy as Lb0r0R0cks at the start of your code and then, say 100 lines later, have Lb0r0R0cks.cos(XVal) which would be very difficult to follow and you would have to search for what it means.\nIn this module you’ll meet a few other widely used libraries that, like numpy, have pretty much universally accepted, standard names:\n\n\n\nLibrary\nPurpose\nStandard short name\n\n\n\n\nScipy\nA collection of scientific computing methods\nsp\n\n\nPandas\nData manipulation and analysis\npd\n\n\nScikit Learn\nA collection of machine learning methods\nsklearn\n\n\n\nThere are plenty of other examples - look out for them in your reading/learning for this module.\n\n\n5.2.3 Exercises\n\nInvestigate the operator precedence in python.\nExperiment with the maths functions in numpy-are all the ones you expect there? Do they work the way you expect?\nModern python has a maths library called “math” that provides similar maths functions to numpy. Numpy provides a lot of extra functionality, but for most things there is not much to choose between them. Repeat your numpy maths experiments with the math module. Do you see any different answers?",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "GettingStarted.html#read-the-docs",
+    "href": "GettingStarted.html#read-the-docs",
+    "title": "4  Introduction",
+    "section": "5.3 Read the docs",
+    "text": "5.3 Read the docs\nWhilst discussing the standard libraries, it is worth pointing out that they have excellent online documentation. For example, for Pandas look here: https://pandas.pydata.org/pandas-docs/stable/user_guide/index.html. Smaller libraries are likely to use the ReadTheDocs web system for their documentation e.g. https://pytube.io/en/latest/index.html. This system provides a standard look for documentation that makes it easier to find you way round new libraries.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "GettingStarted.html#file-based-python",
+    "href": "GettingStarted.html#file-based-python",
+    "title": "4  Introduction",
+    "section": "5.4 file-based python",
+    "text": "5.4 file-based python\nThere is an alternative way to work with python. Follow the instructions here: Spyder\n\n5.4.1 Hello World!\n(in Spyder) In the console window (bottom left) you should see a prompt that looks something like this:\nIn[1]:\nThis is the current line and is where what you type appears. Type in the following, but do not press the return key:\nprint('Hello world!')\nWhat do you think this code does? Press the return key and find out if you were right…\nThe code calls the print function telling it you want ‘Hello world!’ to appear on the screen. In python anything inside quotes (single or double) are examples of strings and are just text information.\nYou can use the console view to enter python commands one line at a time. This is fine when you have a line or two to deal with, but in the long run a file based approach is needed and in most cases the Jupyter notebook is the best option.\n\n\n5.4.2 Working with files\nSo far, we have typed in code to a python session and observed the results. For anything involving more than two or three lines of code we need a way to save/recall code. Python code is usually stored in files with names that end in .py - this is the equivalent of .docx for Word files. .py files can be edited in any text editor (e.g. notepad) but programming editors such as spyder use auto colouring to make the code easier to read - this can be customised.\nThe left hand section of the screen in Spyder is for entering and editing code (usually python). You can enter python code over multiple lines.\nTo run the code, first save the file, then click the triangle at the middle/top of the screen section. The results of most of your code will appear in the console window. Any graphs/images you work with will appear in the section above the console.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "4  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. (USA) 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "IntroNB.html",
+    "href": "IntroNB.html",
+    "title": "3  Welcome to your Python journey",
+    "section": "",
+    "text": "3.1 Notebooks vs code files\nThis is a short introduction to python and using it on University computers (and your own computer should you wish to).\nThis documentation is available in website form or as a single PDF. If you are viewing the website version then the links on the left will help you navigate between chapters and the links on the right allow you to navigate within a webpage.\nTraditionally, python coding has been done with individual files (usually with a .py extension). These files are edited then sent to a python interpreter to execute the code. More recently, a system based on notebooks has become very popular, particularly for science/engineering applications.\nIn this module we will be using .ipynb format notebooks. I prefer the notebook approach for small programming tasks, but still use the .py approach for more involved work. The lab material and coursework submissions will be jupyter notebooks, but there will be examples of .py files for you to explore across the module.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Welcome to your Python journey</span>"
+    ]
+  },
+  {
+    "objectID": "IntroNB.html#notebooks-vs-code-files",
+    "href": "IntroNB.html#notebooks-vs-code-files",
+    "title": "3  Welcome to your Python journey",
+    "section": "",
+    "text": "3.1.1 Notebook quickstart\nIf you have not used Jupyter notebooks before then read this before going any further: Jupyter notebook quickstart\nThe code below is an example of python code in a Jupyter notebook - the leading notebook system for python. The code has been split into three sections–these are referred to as cells.\n\nThe first cell imports (brings in) external code libraries to extend what python can do.\nThe second cell sets up some parameters\nThe third cell does some working out and displays the results\n\nThis general format is quite common for a notebook. There are often more cells, but the general layout remains the same.\nNote: in python the # symbol is used to mark what follows on the line as being a comment. This means that anything to the right of the symbol is ignored by python. This allows you to put explanatory notes in your code. It is also a quick way to turn off one or more lines of code when you are testing/debugging it.\n\n# The code uses the stats library to generate an array of 1000 points belonging to a normal\n# distribution with a mean of 20 and a standard deviation of 4\n\n# Import required libraries\nfrom scipy import stats\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n\n# Specify the properties of the normal distribution\nn_sample = 1000\nmean = 20\nsigma = 4\n\n\n# Generate an array of data belonging to the normal distribution\nrand_dist1 = stats.norm.rvs(loc = mean, scale = sigma, size = n_sample)\n\n# Check that the data meets expectations\nprint(f\"Mean = {np.mean(rand_dist1):,.4f} and stddev = {np.std(rand_dist1):,.4f}\")\nprint(stats.normaltest(rand_dist1))\n\n# Plot the histogram of the data and the distribution function\ncount, bins, ignored = plt.hist(rand_dist1, 50, density=True)\n\nplt.plot(bins, 1/(sigma * np.sqrt(2 * np.pi)) * np.exp( - (bins - mean)**2 / (2 * sigma**2)), linewidth=2, color='r')\nplt.show()\n\nMean = 20.3478 and stddev = 3.9695\nNormaltestResult(statistic=2.74838621513032, pvalue=0.2530436924927925)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Welcome to your Python journey</span>"
+    ]
+  },
+  {
+    "objectID": "IntroNB.html#text-blocks-in-notebooks",
+    "href": "IntroNB.html#text-blocks-in-notebooks",
+    "title": "3  Welcome to your Python journey",
+    "section": "3.2 Text blocks in notebooks",
+    "text": "3.2 Text blocks in notebooks\nYou can also have blocks of text in notebooks. These allow various formatting options:\n\nBold\nItallic\nhighlighted\n\nAnd maths is quite easy for example $ E = mc^2$ generates: $ E = mc^2$ - this is ‘in-line’ maths. Pairs of dollar symbols will generate centred maths on its own line e.g. $$ E = mc^2$$ gives \\[ E = mc^2\\]\nFor text blocks Jupyter Notebooks use a formatting system called Markdown – it can do a lot more than shown above. Have a look here for more details: https://www.markdownguide.org/basic-syntax/ (or here Jupyter markdown docs)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Welcome to your Python journey</span>"
+    ]
+  },
+  {
+    "objectID": "IntroNB.html#next-steps",
+    "href": "IntroNB.html#next-steps",
+    "title": "3  Welcome to your Python journey",
+    "section": "3.3 Next steps",
+    "text": "3.3 Next steps\nIt is now time to start getting going with Python coding.\nNotebooks with worked examples to explore and blank sections for you to complete will be provided via the Module’s Team.\nIf you are viewing this as a webpage then click on the link on the bottom right of the page. If you are reading the PDF, then move on to the next page…",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Welcome to your Python journey</span>"
+    ]
+  },
+  {
+    "objectID": "Lab1Calculations.html",
+    "href": "Lab1Calculations.html",
+    "title": "6  Lab 1: Engineering Calculations with Python",
+    "section": "",
+    "text": "6.1 Learning Objectives\nAt the end of this exercise set you should be able to:",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Lab 1: Engineering Calculations with Python</span>"
+    ]
+  },
+  {
+    "objectID": "Lab1Calculations.html#learning-objectives",
+    "href": "Lab1Calculations.html#learning-objectives",
+    "title": "6  Lab 1: Engineering Calculations with Python",
+    "section": "",
+    "text": "Run Python code in notebooks\nStore values in variables\nUse mathematical operators\nFormat numerical output\nUnderstand the relationship between engineering equations and code",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Lab 1: Engineering Calculations with Python</span>"
+    ]
+  },
+  {
+    "objectID": "Lab1Calculations.html#running-python-code-notebooks",
+    "href": "Lab1Calculations.html#running-python-code-notebooks",
+    "title": "6  Lab 1: Engineering Calculations with Python",
+    "section": "6.2 Running python code – notebooks",
+    "text": "6.2 Running python code – notebooks\nIn this module we will be using Jupyter Notebooks as the environment to run python code. Notebooks are useful ways to develop code alongside embeded notes, equations, images. They are excellent ways to produce reports, presentations, and even entire books.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Lab 1: Engineering Calculations with Python</span>"
+    ]
+  },
+  {
+    "objectID": "Lab1Calculations.html#starting-jupyter",
+    "href": "Lab1Calculations.html#starting-jupyter",
+    "title": "6  Lab 1: Engineering Calculations with Python",
+    "section": "6.3 Starting Jupyter",
+    "text": "6.3 Starting Jupyter\nOn a University PC: In the search box type Anaconda. Amongst the options you should see ‘Anaconda Navigator’ - select this.\nOnce Anaconda has started: Click on ‘Launch’ in the Jupyter Lab box. This will start a browser window that looks something like this:\n\n\n\nScreenshot of Jupyter start screen\n\n\nThe right hand block on this screen allows you to create and start editing files of different types. The left hand block determines where those files will end up.\n\n\n\n\n\n\nImportant\n\n\n\non startup Jupyter defaults to the main user folder on the PC - you must not save your files here - they are wiped at 6am every day. Instead click on OneDrive-Loughborough University to take you to your OneDrive space. I advise creating a folder there for your MPP001 work.\n\n\nOnce in your MPP001 folder you can click on the ‘Python 3’ square just below Notebook in the righthand block. This will start a new notebook:  Click in the light-grey box to begin to write code. An easy starter is:\nprint('Hello world!')`\nPress Shift and Return at the same time to execute the code in the block. You should get something like this:\n\n\n\nScreenshot of notebook with ‘Hello world!’ code\n\n\nNotice that the box you typed in now has a number - this tells you that the code in it has been executed and when there is more than one code block it lets you work out the order of running the blocks. Second the text ‘Hello world!’ has appeared below the block – this is the output of the python code. Finally, a new empty block awaits your input.\nIf you had just pressed return then you would have gone to a new line in the block and you could have added more code.\nYou can go back to a cell to modify it and/or re-run it. To do this, just click in the cell.\nBlocks in notebooks can be one of 3 kinds: Code - the default, Markdown – useful for text, images, etc., and Raw - we are unlikely to use this. You can change a block type by clicking on the word Code in the top-bar of the window.\nYou can find out more about notebooks at this link\nThe code below is an example of a small Jupyter notebook. The code has been split into three cells. It could have been put in a single cell, but dividing code up like this makes it easier to follow and much easier to maintain or adapt.\n\nThe first cell imports (brings in) external code libraries to extend what python itself can do.\nThe second cell sets up some parameters\nThe third cell does some working out and displays the results\n\nThis general format is quite common for a notebook. There are often more cells, but the general layout remains the same.\nNote: in python the # symbol is used to mark what follows on the line as being a comment. This means that anything to the right of the symbol is ignored by python. This allows you to put explanatory notes in your code. It is also a quick way to turn off one or more lines of code when you are testing/debugging it.\n\n# The code uses the stats library to generate an array of 1000 points belonging to a normal\n# distribution with a mean of 20 and a standard deviation of 4\n\n# Import required libraries\nfrom scipy import stats # a suite of statistics related functions\nimport numpy as np # numpy provides numerical functions and storage similar to that in Matlab\nimport matplotlib.pyplot as plt # plotting functions inspired by Matlab\n\n\n# Specify the properties of the normal distribution\nn_sample = 1000\nmean = 20\nsigma = 4\n\n\n# Generate an array of data belonging to the normal distribution\nrand_dist1 = stats.norm.rvs(loc = mean, scale = sigma, size = n_sample)\n\n# Check that the data meets expectations\nprint(f\"Mean = {np.mean(rand_dist1):.4f} and stddev = {np.std(rand_dist1):.4f}\")\nprint(stats.normaltest(rand_dist1))\n\n# Plot the histogram of the data and the distribution function\ncount, bins, ignored = plt.hist(rand_dist1, 50, density=True)\n\nplt.plot(bins, 1/(sigma * np.sqrt(2 * np.pi)) * np.exp( - (bins - mean)**2 / (2 * sigma**2)), linewidth=2, color='r')\nplt.show()\n\nMean = 20.05 and stddev = 3.9996\nNormaltestResult(statistic=np.float64(1.6929087397738105), pvalue=np.float64(0.42893307700219363))",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Lab 1: Engineering Calculations with Python</span>"
+    ]
+  },
+  {
+    "objectID": "Lab1Calculations.html#storing-values-in-variables",
+    "href": "Lab1Calculations.html#storing-values-in-variables",
+    "title": "6  Lab 1: Engineering Calculations with Python",
+    "section": "6.4 Storing values in variables",
+    "text": "6.4 Storing values in variables\nIn programming we almost always need to store values e.g. in the above code the properties of the normal distribution were specified in the second block. These values are then used in the third block by referring to the variable names. The general format for assigning variables is\nvariable_name = value\nVery often the value will be a number (e.g. lab_length = 2) however other types of information can be stored e.g.\nname = 'Simon'\nprint(f'My name is {name}')\n\n\n\n\n\n\nNote\n\n\n\nthe pair of ‘…’ around the value tell python that the value is a string (text) rather than the name of another variable. Python has a range of different variable types - you should be able to spot them as you go along. Python can usually work out the type from the context of the code.\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe f at the beginning of the string is important – there is more about later in this chapter.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Lab 1: Engineering Calculations with Python</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#python-on-you-own-computer",
+    "href": "intro.html#python-on-you-own-computer",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "2.1.1 Python for research\nThe Anaconda Python distribution is NOT free for research (or commercial) use. I use the conda-forge distribution instead, this provides a very similar experience to the Anaconda distribution.\nOther versions of python are available. If you do not use Anaconda/conda-forge then do make sure you are installing a one of the Python 3 variations (I advise using version 3.8 or higher). Python 2 is still available, but has some significant differences.\nMacOS (and many Linux versions) come with a version of Python however these versions often lack the science libraries needed for this module and it is generally easier to install Anaconda/conda-forge.\nAnaconda also comes with a range of tools for editing and running python code. Spyder is probably the best (free) choice for editing science/engineering code. You can install it separately or as part of the Anaconda installation. Another excellent choice is pyCharm.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#notebook-based-python",
+    "href": "intro.html#notebook-based-python",
+    "title": "2  Introduction",
+    "section": "2.2 Notebook-based python",
+    "text": "2.2 Notebook-based python\nIf you didn’t fancy the guide given in the link on the Welcome page then have a quick look here: Jupyter notebooks\n\n2.2.1 Exercise:\nModify the example in the link above so that it gives the “Hello World!” greeting.\n\n\n2.2.2 Quick way to run cells\nClicking the Run cell button is fine, but you can save time by pressing the Shift key at the same time as pressing the Return key. This will run whichever cell the cursor is in.\nThis means that you can go back to a cell, edit it, and re-run just that cell. If you use a ‘.py’ file approach then all the code has to be re-run when you make a modification.\n\n\n2.2.3 File extensions\nSo far, we have typed in code to a python session and observed the results. For anything involving more than two or three lines of code we need a way to save/recall code. Jupyter files have the extension .ipynb",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#simple-maths-in-python",
+    "href": "intro.html#simple-maths-in-python",
+    "title": "2  Introduction",
+    "section": "2.3 Simple maths in python",
+    "text": "2.3 Simple maths in python\nPython has a range of standard mathematical functions as sumarised in the table below. If you have used something like Excel for maths then you should be familiar with them. Try to predict the outcomes of the examples given before entering them into your python system. Do they give the results you expected?\n\n\n\nSymbol\noperation\nexample\n\n\n\n\n+\naddition\n3+2\n\n\n-\nsubstraction\n2-3\n\n\n*\nmultiplication\n3*2\n\n\n/\ndivision\n2/3\n\n\n**\nexponent\n3**2\n\n\n\nThere are a range of other maths operators as well, but this is enough for now.\n\n2.3.1 Beyond simple maths\nGiven the similarity to Excel for the operators above, what do you think the following will produce?\ncos(0.0)\nTry it in the Spyder console.\nYou probably got something like:\nTraceback (most recent call last):\n  File \"&lt;pyshell#6&gt;\", line 1, in &lt;module&gt;\n    cos(0)\nNameError: name 'cos' is not defined\nWhich is a longwinded way of the python system telling you it has no function cos(). One of the key features of python is that it is easily extendable. Try the following code snippet:\nimport numpy as np\nnp.cos(0.0)\nThe first line in the block above tells python to use the module called numpy (often pronounced num–pie) and all references to its contents will be preceded by np. for example np.sin(3.141). Numpy is an extensive maths library that is very well optimised and we will use it a lot in MPP001–along with a lot of other libraries.\n\n\n2.3.2 as library_name\nThe as np can be neglected and then to access numpy’s functions numpy. will need to be added instead of ‘np’. However it is very common to use as library_name because the full library name can be quite long and this can make the card hard to read (and longer to type). Formally the as sets up an alias to the original name of the library so you.\nnp is used by convention for the numpy library, you can use any text identifier you like, but remember that you and others need to be able to follow the code so keep it simple. For instance you could use include numpy as Lb0r0R0cks at the start of your code and then, say 100 lines later, have Lb0r0R0cks.cos(XVal) which would be very difficult to follow and you would have to search for what it means.\nIn this module you’ll meet a few other widely used libraries that, like numpy, have pretty much universally accepted, standard names:\n\n\n\nLibrary\nPurpose\nStandard short name\n\n\n\n\nScipy\nA collection of scientific computing methods\nsp\n\n\nPandas\nData manipulation and analysis\npd\n\n\nScikit Learn\nA collection of machine learning methods\nsklearn\n\n\n\nThere are plenty of other examples - look out for them in your reading/learning for this module.\n\n\n2.3.3 Exercises\n\nInvestigate the operator precedence in python.\nExperiment with the maths functions in numpy-are all the ones you expect there? Do they work the way you expect?\nModern python has a maths library called “math” that provides similar maths functions to numpy. Numpy provides a lot of extra functionality, but for most things there is not much to choose between them. Repeat your numpy maths experiments with the math module. Do you see any different answers?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#read-the-docs",
+    "href": "intro.html#read-the-docs",
+    "title": "2  Introduction",
+    "section": "2.4 Read the docs",
+    "text": "2.4 Read the docs\nWhilst discussing the standard libraries, it is worth pointing out that they have excellent online documentation. For example, for Pandas look here: https://pandas.pydata.org/pandas-docs/stable/user_guide/index.html. Smaller libraries are likely to use the ReadTheDocs web system for their documentation e.g. https://pytube.io/en/latest/index.html. This system provides a standard look for documentation that makes it easier to find you way round new libraries.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#file-based-python",
+    "href": "intro.html#file-based-python",
+    "title": "2  Introduction",
+    "section": "2.5 file-based python",
+    "text": "2.5 file-based python\nThere is an alternative way to work with python. Follow the instructions here: Spyder\n\n2.5.1 Hello World!\n(in Spyder) In the console window (bottom left) you should see a prompt that looks something like this:\nIn[1]:\nThis is the current line and is where what you type appears. Type in the following, but do not press the return key:\nprint('Hello world!')\nWhat do you think this code does? Press the return key and find out if you were right…\nThe code calls the print function telling it you want ‘Hello world!’ to appear on the screen. In python anything inside quotes (single or double) are examples of strings and are just text information.\nYou can use the console view to enter python commands one line at a time. This is fine when you have a line or two to deal with, but in the long run a file based approach is needed and in most cases the Jupyter notebook is the best option.\n\n\n2.5.2 Working with files\nSo far, we have typed in code to a python session and observed the results. For anything involving more than two or three lines of code we need a way to save/recall code. Python code is usually stored in files with names that end in .py - this is the equivalent of .docx for Word files. .py files can be edited in any text editor (e.g. notepad) but programming editors such as spyder use auto colouring to make the code easier to read - this can be customised.\nThe left hand section of the screen in Spyder is for entering and editing code (usually python). You can enter python code over multiple lines.\nTo run the code, first save the file, then click the triangle at the middle/top of the screen section. The results of most of your code will appear in the console window. Any graphs/images you work with will appear in the section above the console.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "learningPlan.html",
+    "href": "learningPlan.html",
+    "title": "5  Lab learning plan",
+    "section": "",
+    "text": "5.1 Gen AI use\nOver the next few weeks we will cover thes topics listed below which are deisgned to help you learn programming in python with an emphasis on reproducable workflows that are required in engineering and related careers:\n1 to 6 will have assessed exercises associated with them. Together these exercises are worth 10% of the module.\nThis assessment will be done by submitting each week’s notebook to Gradescope via the appropriate submission point on Learn. Gradescope will evaluate your code, checking that it performs the required functions and check for similarity with the work of others and any other unusual patterns.\nYou should avoid using AI (ChatGPT, Claude, etc.) with the lab problems as this will significantly interfere with your learning of programming skills. Some of the notebooks, particularly those towards the end of the course will use Gradescope to embed hidden tests that will prevent GenAI producing useful results. If you have skipped the learning process then you are likely to struggle with solving the notebook problems.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Lab learning plan</span>"
+    ]
+  },
+  {
+    "objectID": "Lab1Calculations.html#functions",
+    "href": "Lab1Calculations.html#functions",
+    "title": "6  Lab 1: Engineering Calculations with Python",
+    "section": "6.5 Functions",
+    "text": "6.5 Functions\nVery often in programming we need to do use the same block of code multiple times, perhaps with different start values. One of the ways of achieving this is a function. Python has a lot of built in functions e.g. print() in the code above we’ll meet many more as the learning progresses. Most programming languages have a way of defining functions (blocks of code) for re-use so that what can be done can be extended.\nIn python we define a function as follows:\ndef function_name(parameters):\n    # code block (the indenting of the code is important)\n\n    #\n    return value_returned # if any\nfunction_name is the identifier used to reference, or ‘call’, the function. parameters is a comma separated list of one or more values that are used by the function’s code block. The code block can produce output as it runs or return a value to the point in the code that it was called.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Lab 1: Engineering Calculations with Python</span>"
+    ]
+  },
+  {
+    "objectID": "Lab1Calculations.html#assessment",
+    "href": "Lab1Calculations.html#assessment",
+    "title": "6  Lab 1: Engineering Calculations with Python",
+    "section": "6.7 Assessment",
+    "text": "6.7 Assessment\nThe work for the first week is designed to help you get used to: Assigning values, maths functions, creating your own functions.\nDownload the Week 1 notebook from the Learn page and attempt the programming problems given.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Lab 1: Engineering Calculations with Python</span>"
+    ]
+  },
+  {
+    "objectID": "Lab1Calculations.html#formatting-results",
+    "href": "Lab1Calculations.html#formatting-results",
+    "title": "6  Lab 1: Engineering Calculations with Python",
+    "section": "6.6 Formatting results",
+    "text": "6.6 Formatting results\nIn the third cell above the line\n# Check that the data meets expectations\nprint(f\"Mean = {np.mean(rand_dist1):,.4f} and stddev = {np.std(rand_dist1):,.4f}\")\nresults in this output: Mean = 19.8415 and stddev = 3.9406\nNotice that the numerical results are both given to 4 decimal places. This is no accident, the code in that print() statement is set up to control the format of the output. This process starts with the f just to the right of the first bracket. This tells Python that the string (text) that follows is likely to contain placeholders {} which can contain variables, code, and formatting information.\nThe first placeholder above has two parts: np.mean(rand_dist1) this calls the numpy library function mean() with rand_dist1 as its parameter value. It will return a number with a lot of decimal places. The part of the placeholder after the colon is a formatter .4f this tells Python to give the result to 4 decimal places. If you (quite sensibly) prefer to limit the number of significant figures then use g in place of the f. Try changing the formatters in the code above. You can find out more about formatters at this page. They can do more than control number precision.\nThe second placehold has a very similar structure. You can modify one and compare its new output to the other one to help get a feel for what the various formatters do.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Lab 1: Engineering Calculations with Python</span>"
+    ]
+  },
+  {
+    "objectID": "WelcomeToPythonJourney.html",
+    "href": "WelcomeToPythonJourney.html",
+    "title": "3  Welcome to your Python journey",
+    "section": "",
+    "text": "3.1 Notebooks vs code files\nThis is a short introduction to python and using it on University computers (and your own computer should you wish to).\nThis documentation is available in website form or as a single PDF. If you are viewing the website version then the links on the left will help you navigate between chapters and the links on the right allow you to navigate within a webpage.\nTraditionally, python coding has been done with individual files (usually with a .py extension). These files are edited then sent to a python interpreter to execute the code. More recently, a system based on notebooks has become very popular, particularly for science/engineering applications.\nIn this module we will be using .ipynb format notebooks. I prefer the notebook approach for small programming tasks, but still use the .py approach for more involved work. The lab material and coursework submissions will be jupyter notebooks, but there will be examples of .py files for you to explore across the module.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Welcome to your Python journey</span>"
+    ]
+  },
+  {
+    "objectID": "WelcomeToPythonJourney.html#notebooks-vs-code-files",
+    "href": "WelcomeToPythonJourney.html#notebooks-vs-code-files",
+    "title": "3  Welcome to your Python journey",
+    "section": "",
+    "text": "3.1.1 Notebook quickstart\nIf you have not used Jupyter notebooks before then read this before going any further: Jupyter notebook quickstart\nThe code below is an example of python code in a Jupyter notebook - the leading notebook system for python. You can download a copy of this notebook from the Python section of the MPP001 Learn page – it is called ‘BasicNotebook.ipynb’\nThe code has been split into three sections–these are referred to as cells.\n\nThe first cell imports (brings in) external code libraries to extend what python can do.\nThe second cell sets up some parameters\nThe third cell does some working out and displays the results\n\nThis general format is quite common for a notebook. There are often more cells, but the general layout remains the same.\nNote: in python the # symbol is used to mark what follows on the line as being a comment. This means that anything to the right of the symbol is ignored by python. This allows you to put explanatory notes in your code. It is also a quick way to turn off one or more lines of code when you are testing/debugging it.\n\n# The code uses the stats library to generate an array of 1000 points belonging to a normal\n# distribution with a mean of 20 and a standard deviation of 4\n\n# Import required libraries\nfrom scipy import stats\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n\n# Specify the properties of the normal distribution\nn_sample = 1000\nmean = 20\nsigma = 4\n\n\n# Generate an array of data belonging to the normal distribution\nrand_dist1 = stats.norm.rvs(loc = mean, scale = sigma, size = n_sample)\n\n# Check that the data meets expectations\nprint(f\"Mean = {np.mean(rand_dist1):,.4f} and stddev = {np.std(rand_dist1):,.4f}\")\nprint(stats.normaltest(rand_dist1))\n\n# Plot the histogram of the data and the distribution function\ncount, bins, ignored = plt.hist(rand_dist1, 50, density=True)\n\nplt.plot(bins, 1/(sigma * np.sqrt(2 * np.pi)) * np.exp( - (bins - mean)**2 / (2 * sigma**2)), linewidth=2, color='r')\nplt.show()\n\nMean = 20.3478 and stddev = 3.9695\nNormaltestResult(statistic=2.74838621513032, pvalue=0.2530436924927925)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Welcome to your Python journey</span>"
+    ]
+  },
+  {
+    "objectID": "WelcomeToPythonJourney.html#text-blocks-in-notebooks",
+    "href": "WelcomeToPythonJourney.html#text-blocks-in-notebooks",
+    "title": "3  Welcome to your Python journey",
+    "section": "3.2 Text blocks in notebooks",
+    "text": "3.2 Text blocks in notebooks\nYou can also have blocks of text in notebooks. These allow various formatting options:\n\nBold\nItallic\nhighlighted\n\nAnd maths is quite easy for example $ E = mc^2$ generates: $ E = mc^2$ - this is ‘in-line’ maths. Pairs of dollar symbols will generate centred maths on its own line e.g. $$ E = mc^2$$ gives \\[ E = mc^2\\]\nFor text blocks Jupyter Notebooks use a formatting system called Markdown – it can do a lot more than shown above. Have a look here for more details: https://www.markdownguide.org/basic-syntax/ (or here Jupyter markdown docs)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Welcome to your Python journey</span>"
+    ]
+  },
+  {
+    "objectID": "WelcomeToPythonJourney.html#next-steps",
+    "href": "WelcomeToPythonJourney.html#next-steps",
+    "title": "3  Welcome to your Python journey",
+    "section": "3.3 Next steps",
+    "text": "3.3 Next steps\nIt is now time to start getting going with Python coding.\nNotebooks with worked examples to explore and blank sections for you to complete will be provided via the Module’s Team.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Welcome to your Python journey</span>"
+    ]
+  },
+  {
+    "objectID": "WelcomeToPythonJourney.html#simple-maths-in-python",
+    "href": "WelcomeToPythonJourney.html#simple-maths-in-python",
+    "title": "3  Welcome to your Python journey",
+    "section": "3.4 Simple maths in python",
+    "text": "3.4 Simple maths in python\nPython has a range of standard mathematical functions as sumarised in the table below. If you have used something like Excel for maths then you should be familiar with them. Try to predict the outcomes of the examples given before entering them into your python system. Do they give the results you expected?\n\n\n\nSymbol\noperation\nexample\n\n\n\n\n+\naddition\n3+2\n\n\n-\nsubstraction\n2-3\n\n\n*\nmultiplication\n3*2\n\n\n/\ndivision\n2/3\n\n\n**\nexponent\n3**2\n\n\n\nThere are a range of other maths operators as well, but this is enough for now.\n\n3.4.1 Beyond simple maths\nGiven the similarity to Excel for the operators above, what do you think the following will produce?\ncos(0.0)\nStart a new notebook and try the code in a block.\nYou probably got something like:\nTraceback (most recent call last):\n  File \"&lt;pyshell#6&gt;\", line 1, in &lt;module&gt;\n    cos(0)\nNameError: name 'cos' is not defined\nWhich is a longwinded way of the python system telling you it has no function cos(). One of the key features of python is that it is easily extendable. T:\nimport numpy as np\nnp.cos(0.0)\nThe first line in the block above tells python to use the module called numpy (often pronounced num–pie) and all references to its contents will be preceded by np. for example np.sin(3.141). Numpy is an extensive maths library that is very well optimised and we will use it a lot in MPP001–along with a lot of other libraries.\n\n\n3.4.2 as library_name\nThe as np can be neglected and then to access numpy’s functions numpy. will need to be added instead of ‘np’. However it is very common to use as library_name because the full library name can be quite long and this can make the card hard to read (and longer to type). Formally the as sets up an alias to the original name of the library so you.\nnp is used by convention for the numpy library, you can use any text identifier you like, but remember that you and others need to be able to follow the code so keep it simple. For instance you could use include numpy as Lb0r0R0cks at the start of your code and then, say 100 lines later, have Lb0r0R0cks.cos(XVal) which would be very difficult to follow and you would have to search for what it means.\nIn this module you’ll meet a few other widely used libraries that, like numpy, have pretty much universally accepted, standard names:\n\n\n\nLibrary\nPurpose\nStandard short name\n\n\n\n\nScipy\nA collection of scientific computing methods\nsp\n\n\nPandas\nData manipulation and analysis\npd\n\n\nScikit Learn\nA collection of machine learning methods\nsklearn\n\n\n\nThere are plenty of other examples - look out for them in your reading/learning for this module.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Welcome to your Python journey</span>"
+    ]
+  },
+  {
+    "objectID": "Algorithms.html",
+    "href": "Algorithms.html",
+    "title": "7  Programming (in python)",
+    "section": "",
+    "text": "7.1 Algorithms\nThere are two absolutely key steps in writing any computer program (this applies to any programming language):\nIf you can do these for the problem in hand then the process of writing the code is usually straightforward.\nPut together these steps allow you to develop an algorithm for the problem you are working on. In formal computer science there is more to it than this, but we need to be pragmatic and get on with solving problems.\nFor MPP001 step 1 should be straightforward. As you get more ambitious with programming it can be tricky to define (and understand sufficiently well) what it is you want to do. Questions you should ask yourself include:\nAs you gain experience with programming you will develop you own list and learn to adjust it to the situation.\nStep 2 is a vital step that has to happen before you begin to write the code. With a little practice you will be able to do this step in your head for simple problems. However, for anything involving more than a handful of lines of code it is best to write out the steps and refine them.\nOf course, there are other stages – testing, optimisation/refinement, etc. but for now these are enough to get going.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Programming (in python)</span>"
+    ]
+  },
+  {
+    "objectID": "Algorithms.html#algorithms",
+    "href": "Algorithms.html#algorithms",
+    "title": "7  Programming (in python)",
+    "section": "",
+    "text": "Understanding what it is you want to do\nBreaking this down into individual steps\n\n\n\n\n\nWhat is the starting point (what information do I know)?\nWhat result(s) should be returned/output?\nWhat calculations etc are necessary\nAre there any limits on the input/output?\n\n\n\n\n\n7.1.1 Example: how many cans of paint?\nYou are tasked with working out how many cans of paint are required to coat the sides and top of a tank of diameter \\(5m\\) and height \\(8m\\) if each can covers \\(2.5m^2\\).\nStep one: Inputs: diameter, Height, coverage per can. (limits: all should be above zero)\nOutputs: Number of cans (limits: should be an integer)\nEquations: the surface area of a cylinder is given by:\n\\[ \\pi\\times \\textrm{diameter}\\times \\textrm{height}\\]\nand the area of an end is:\n\\[ \\frac{\\pi\\times \\textrm{diameter}^2}{4}\\]\nthe number of cans will be given by:\n\\[N=\\frac{\\textrm{total surface area}}{\\textrm{coverage per can}}\\]\nStep two A first stage-wise step through of the process could be:\n1. Store input values in sensibly named variables\n2. Calculate number of cans\n3. Output results\nThis could usefully be refined to:\n1. Store input values in sensibly named variables\n    * Diameter = 5, Height = 8, Coverage = 2.5\n2. Calculate number of cans\n    * Ncans = (Surface area)/Coverage\n3. Output results\n    * Ncans needs to be rounded up\nThis is about ready to turn into python code:\n# code to calculate number of cans required to paint sides and top of cylinder\nimport math as math # provides math functions and constants\n# define values. Names should be self explanatory\nDiameter = 5.0\nHeight = 8.0\nCoverage = 2.5\nNumCans = 0. # make sure that start from zero (good practice)\n# Now calculate the number of cans required\n# divide surface area of cylinder side + top by coverage per can\nNumCans = (math.pi*Diameter*Height + math.pi*Diameter**2/4.)/Coverage\n# Output Result\nprint(f'You require {math.ceil(NumCans)} cans of paint') # ceil rounds to the next integer\nNotice the use of comments (anything after a # is a comment and does nothing code wise). These are a way to annotate the code so that it is easier to follow. It is difficult to have too many comments in your code especially if it contains more than a couple of active lines of code.\nNow more complex problems will require more stages and you may go through three or four refinement stages before starting to convert to code. It is tempting to shortcut this, but you’ll be a better programmer for taking the extra time. In fact you’ll probably take less time in the end as there’ll be less wrong with your code when you write it. Also, you may find that more refinement still is needed as you start the coding – don’t worry about this it is bound to happen. As you get more practiced you will get used to making the judgement.\n\n\n\n\n\n\nImportant\n\n\n\nYou may feel that you want to jump into coding after Stage One and for simple problems this may work. However, it is good to get into the habit of doing both steps you will benefit in the medium term–especially if you want to evidence code development for your project and this will be expected for the main assessments on this module.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Programming (in python)</span>"
+    ]
+  },
+  {
+    "objectID": "Algorithms.html#the-building-blocks-of-computer-code",
+    "href": "Algorithms.html#the-building-blocks-of-computer-code",
+    "title": "7  Programming (in python)",
+    "section": "7.2 The building blocks of computer code",
+    "text": "7.2 The building blocks of computer code\nIn order to get a program with a useful level of complexity there are a few key building blocks. These are common to most computer languages (there will be syntax differences–for instance, python uses indentation of code to separate blocks whilst many others use curly brackets i.e. {}. The ones key to introductory python programming are described below.\n\n7.2.1 Conditional statements\nThese check whether a condition is met and perform different code based on this check. The classic structure is the if statement which will execute the following code if the condition tested evaluates to TRUE. if statements can be extended in a number of ways: an else block adds code that is only run if the condition is not met. In python there is also an elif command that can be thought of as ‘else if…’\n\n\n7.2.2 Loops\nThese are used to repeat a block of code either a fixed number of times (usually the for loop) or until some condition is met (while loop).\nIn most computer languages the for-loop increments/decrements a numeric variable through a range of values. Here is a C example\n// Loop in C language - DO NOT copy to python\nfor (int i = 1; i &lt; 11; ++i)\n  {\n    printf(\"%d \", i);\n  }\nDo not try and run this code in Spyder (or any other python system) Hopefully you can see that this would print out the integers from 1 to 10.\nIn python the loop goes through a list of values. The must all be the same type, but beyond that there are very few limits. So this example prints out the primary colours:\nszmdvfzxnik ipython3 colours = ['red','green','blue'] for colour in colours:     print(f'{colour}')\nThe C example above could be reproduced in python with something like:\nszmdvfzxnik ipython3 for i in range(11):     print(i) range() is a function that returns a list of numbers. It defaults to starting at 0, but this can be changed (e.g. range(1,11) would give 1, 2, …, 10).\nTop tip Loops are often used for calculating sums, products, etc. make sure the variable that you are storing the result in starts from where it is supposed to. For sums (i = i+NextValue) this will usually be zero. For products (y = y*NextValue) one is a better choice.\n\n\n7.2.3 Functions\nThese are blocks of code that you send values to and the block returns one or more values. print() is an example of a built-in function. You can add your own functions to python code either by importing them from another file/script or by defining them in the script you are working on.\nA minimal python example would be:\ndef HelloWorld():\n    print('Hello world!')\nNote the code after the def line is indented – this is how python tracks the extent of the current code block. You can see a similar use of indenting in the for loop above.\nThe brackets after HelloWorld can take the names of arguments (parameters) that are to be passed to the function. E.g.\ndef Quotient(x,y):\n    print(x/y)\nwhich could be called by Quotient(2,3). Note the order of arguments matters.\nYou can give arguments default values:\ndef Sum(x,y=3):\n    return(x+y)\nCalling this with Sum(4) will return 7 whereas Sum(4,2) will return 6. Note all arguments after the first with a default value must have default values.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Programming (in python)</span>"
+    ]
+  },
+  {
+    "objectID": "Algorithms.html#finding-out-more-about-python",
+    "href": "Algorithms.html#finding-out-more-about-python",
+    "title": "7  Programming (in python)",
+    "section": "7.3 Finding out more about python",
+    "text": "7.3 Finding out more about python\nAn excellent resource for getting started in python is week one of this online course: introPy\nThere are lots of other learning resources available via the internet. LinkedIn Learning (for which you have access via the University) has lots of professionally created courses to choose from and Google and/or YouTube may have one or two things of interest as well.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Programming (in python)</span>"
+    ]
+  },
+  {
+    "objectID": "CodeStructures.html",
+    "href": "CodeStructures.html",
+    "title": "8  The building blocks of computer code",
+    "section": "",
+    "text": "8.1 Conditional statements\nIn order to get a program with a useful level of complexity there are a few key building blocks. These are common to most computer languages (there will be syntax differences–for example python uses indentation of code to separate blocks whilst many others use curly brackets i.e. {}.\nThe building blocks key to introductory python programming are described below.\nThese check whether a condition is met and perform different code based on this check. The classic structure is the if statement which will execute the following code if the condition tested evaluates to TRUE. if statements can be extended in a number of ways: an else block adds code that is only run if the condition is not met. In python there is also an elif command that can be thought of as ‘else if…’\n# if example\ndef Greater(x,y): # returns greater of x or y\n    if x &gt; y:\n        return x\n    elif y &gt; x:\n        return y\n    else: return x # x&y must be equal, does not matter which is returned\n\nprint(Greater(4,5))\n\n\n5",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The building blocks of computer code</span>"
+    ]
+  },
+  {
+    "objectID": "CodeStructures.html#loops",
+    "href": "CodeStructures.html#loops",
+    "title": "8  The building blocks of computer code",
+    "section": "8.2 Loops",
+    "text": "8.2 Loops\nThese are used to repeat a block of code either a fixed number of times (usually the for loop) or until some condition is met (while loop).\nIn most computer languages the for-loop increments/decrements a numeric variable through a range of values. Here is a C example\n// Loop in C language - DO NOT copy to python\nfor (int i = 1; i &lt; 11; ++i)\n  {\n    printf(\"%d \", i);\n  }\nDo not try and run this code in Spyder (or any other python system) Hopefully you can see that this would print out the integers from 1 to 10.\nIn python the loop goes through a list of values. The must all be the same type, but beyond that there are very few limits. So this example prints out the primary colours:\ncolours = ['red','green','blue'] # a list of colours\nfor colour in colours: # start of the loop. The variable colour contains a different item from the list colours each time through the loop (starting with 'red')\n    print(f'{colour}')\nThe C example above could be reproduced in python with something like:\nfor i in range(11): # range produces a list of integers from 0 up to the value sent in the parentheses\n    print(i)\nrange() is a function that returns a list of numbers. It defaults to starting at 0, but this can be changed (e.g. range(1,11) would give 1, 2, …, 10).\n\n\n\n\n\n\nTip\n\n\n\nLoops are often used for calculating sums, products, etc. make sure the variable that you are storing the result in starts from where it is supposed to. For sums (i = i+NextValue) this will usually be zero. For products (y = y*NextValue) one is a better choice.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The building blocks of computer code</span>"
+    ]
+  },
+  {
+    "objectID": "CodeStructures.html#functions",
+    "href": "CodeStructures.html#functions",
+    "title": "8  The building blocks of computer code",
+    "section": "8.3 Functions",
+    "text": "8.3 Functions\nWe’ve met these before, but for completeness here is a quick reminder\nThese are blocks of code that you send values to and the block returns one or more values. print() is an example of a built-in function. You can add your own functions to python code either by importing them from another file/script or by defining them in the script you are working on.\nA minimal python example would be:\ndef HelloWorld():\n    print('Hello world!')\nNote the code after the def line is indented – this is how python tracks the extent of the current code block. You can see a similar use of indenting in the for loop above.\nThe brackets after HelloWorld can take the names of arguments (parameters) that are to be passed to the function. E.g.\ndef Quotient(x,y):\n    print(x/y)\nwhich could be called by Quotient(2,3). Note the order of arguments matters.\nYou can give arguments default values:\ndef Sum(x,y=3):\n    return(x+y)\nCalling this with Sum(4) will return 7 whereas Sum(4,2) will return 6. Note all arguments after the first with a default value must have default values.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The building blocks of computer code</span>"
+    ]
+  },
+  {
+    "objectID": "CodeStructures.html#finding-out-more-about-python",
+    "href": "CodeStructures.html#finding-out-more-about-python",
+    "title": "8  The building blocks of computer code",
+    "section": "8.4 Finding out more about python",
+    "text": "8.4 Finding out more about python\nAn excellent resource for getting started in python is week one of this online course: introPy\nThere are lots of other learning resources available via the internet. LinkedIn Learning (for which you have access via the University) has lots of professionally created courses to choose from and Google and/or YouTube may have one or two things of interest as well.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The building blocks of computer code</span>"
+    ]
+  },
+  {
+    "objectID": "CodeStructures.html#conditional-statements",
+    "href": "CodeStructures.html#conditional-statements",
+    "title": "8  The building blocks of computer code",
+    "section": "",
+    "text": "# if example\ndef Greater(x,y): # returns greater of x or y\n    if x &gt; y:\n        return x\n    elif y &gt; x:\n        return y\n    else return x # x&y must be equal, does not matter which is returned\n\nprint(Greater(4,5)",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The building blocks of computer code</span>"
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+# Quarto build outputs and cache
+_site/
+.quarto/
+*.pdf
+
+# Operating system files
+.DS_Store
+Thumbs.db
+

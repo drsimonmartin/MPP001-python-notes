@@ -1,0 +1,31 @@
+---
+title: Introduction
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.19.5
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
+These notes are written from th epoint of view of working with a PC in one of LU's computer labs. We'll be using the Jupyter Lab environment (app). You can install essentially the same software on your own computer for free – see below.
+
+## Python on you own computer
+You can install Python on your own computer. The computers in the teaching labs use the Anaconda distribution <https://www.anaconda.com>. It contains a lot of useful python packages and a lot more. It is free for educations use and installers are available for Windows, MacOS, and Linux. If disk space is a premium for you then search on the Anaconda site for the 'miniconda' version which contains the basics and there is an easy way to add any extras that you need.
+
+### Python for research
+The Anaconda Python distribution is **NOT** free for research (or commercial) use. I use the conda-forge distribution instead, this provides a very similar experience to the Anaconda distribution.
+
+Other versions of python are available. If you do not use Anaconda/conda-forge then do make sure you are installing a one of the Python 3 variations (I advise using version 3.8 or higher). Python 2 is still available, but has some significant differences.
+
+MacOS (and many Linux versions) come with a version of Python however these versions often lack the science libraries needed for this module and it is generally easier to install Anaconda/conda-forge.
+
+Anaconda also comes with a range of tools for editing and running python code. Spyder is probably the best (free) choice for editing science/engineering code. You can install it separately or as part of the Anaconda installation. Another excellent choice is pyCharm.
+
+
+

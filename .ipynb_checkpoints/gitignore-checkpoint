@@ -1,0 +1,28 @@
+.Rproj.user
+.DS_Store
+.Rhistoryt
+.Rhistory
+/.quarto/
+/_*.local
+/.venv/
+/.condaenv/
+*_cache/
+/env/
+/_site/
+/_book/
+/labsCopilot/
+/untitled folder/
+/.luarc.json
+
+requirements.txt
+
+**/*.quarto_ipynb
+
+# Claude
+.claude/worktrees/
+# playwright-cli session artifacts
+.playwright-cli/
+
+
+# quarto call axe output
+/_axe-checks/

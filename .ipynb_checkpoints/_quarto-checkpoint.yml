@@ -1,0 +1,40 @@
+project:
+  type: book
+
+book:
+  title: "MPP001 Computer Labs"
+  author: "Simon Martin"
+  date: "23/09/2026"
+  sidebar:
+    tools:
+      - icon: file-pdf
+        href: MPP001-Computer-Labs.pdf
+        text: "Download PDF"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - WelcomeToPythonJourney.ipynb
+    - GettingStarted.qmd
+    - learningPlan.ipynb
+    - Lab1Calculations.ipynb
+    - Algorithms.ipynb
+    - CodeStructures.ipynb
+    - Lab2 introduction.ipynb
+    - Week4Pandas.ipynb
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+    mainfont: "Atkinson Hyperlegible"
+    sansfont: "Atkinson Hyperlegible"
+    monofont: "Courier New"
+    include-in-header:
+      - text: |
+          \raggedright

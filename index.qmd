@@ -1,0 +1,19 @@
+---
+title: Preface
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.19.5
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
+
+These notes are created using the Quarto system. In order to aid accessibility the main font in the PDF version is Atkinson Hyperlegible and the text blocks are left-justified where possible.
+
+To learn more about Quarto books visit <https://quarto.org/docs/books>.
